@@ -73,6 +73,7 @@
 /* Đảm bảo rằng khung có chiều rộng thích hợp */
 .group.relative {
     width: 100%; /* Đảm bảo sử dụng 100% chiều rộng của slide */
+    border: 1px solid #DFDFDF;
     border-radius: 20px;
 }
 
@@ -83,6 +84,11 @@
     text-overflow: ellipsis;
     font-size: 1.5rem;
 }
+@media(max-width: 600px){
+    .textCart{
+        font-size: 1rem;
+    }
+}
 
 .textTitleSmall{
     font-size: 2.5rem;
@@ -91,7 +97,18 @@
     line-height: 5rem;
 }
 
+.textPrice{
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
 
+@media(max-width: 600px){
+    .textPrice{
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+}
 
 /* Container để xếp theo hàng */
 .tab-container {
