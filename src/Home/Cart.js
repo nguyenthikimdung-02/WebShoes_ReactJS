@@ -15,22 +15,31 @@ class Cart extends Component {
     ];
 
     const settings = {
-        dots: false, // Tắt các chấm tròn bên dưới
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        nextArrow: (
+      dots: false, // Tắt các chấm tròn bên dưới
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5, // Mặc định là 5 slide cho màn hình lớn
+      slidesToScroll: 1,
+      nextArrow: (
           <div className="custom-arrow custom-arrow-right">
-            <FaArrowRight />
+              <FaArrowRight />
           </div>
-        ),
-        prevArrow: (
+      ),
+      prevArrow: (
           <div className="custom-arrow custom-arrow-left">
-            <FaArrowLeft />
+              <FaArrowLeft />
           </div>
-        ),
-      };
+      ),
+      responsive: [
+          {
+              breakpoint: 768, // Kích thước màn hình tối đa 768px
+              settings: {
+                  slidesToShow: 2, // Hiển thị 2 slide cho màn hình nhỏ
+              },
+          },
+      ],
+  };
+  
       
 
     return (
