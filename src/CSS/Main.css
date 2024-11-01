@@ -1,0 +1,115 @@
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black !important; /* Ensure color takes effect */
+    cursor: pointer;
+    z-index: 10; /* Higher to overlay on items */
+}
+
+.custom-arrow-right {
+    right: 10px; /* Adjust as needed */
+}
+
+.custom-arrow-left {
+    left: 10px; /* Adjust as needed */
+}
+
+
+/* Thêm khoảng cách giữa các khung */
+.slick-slide {
+    position: relative;
+    margin: 0 10px; /* Thay đổi khoảng cách giữa các khung */
+}
+
+.slick-slider .slick-list{
+    height: 450px;
+}
+/* Khi màn hình nhỏ (sm) */
+@media (max-width: 640px) { /* Kích thước sm thường là 640px */
+    .slick-slider .slick-list {
+        height: 300px; /* Chiều cao cho màn hình nhỏ */
+    }
+}
+
+/* Khi màn hình lớn (lg) */
+@media (min-width: 1024px) { /* Kích thước lg thường là 1024px trở lên */
+    .slick-slider .slick-list {
+        height: 500px; /* Chiều cao cho màn hình lớn */
+    }
+}
+
+
+.slick-next, .slick-prev {
+    padding: 10px;
+    display: inline-flex;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 50%; /* Canh giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn giữa dọc */
+    z-index: 10; /* Đảm bảo hiển thị trên các phần tử khác */
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    background-color: black !important;
+    border-radius: 50%;
+}
+
+/* Vị trí riêng cho nút next */
+.slick-next {
+    margin-right: 5%; /* Đẩy sang phải với khoảng cách mong muốn */
+}
+
+/* Vị trí riêng cho nút prev */
+.slick-prev {
+    margin-left: 5%; /* Đẩy sang trái với khoảng cách mong muốn */
+}
+
+
+
+
+/* Đảm bảo rằng khung có chiều rộng thích hợp */
+.group.relative {
+    width: 100%; /* Đảm bảo sử dụng 100% chiều rộng của slide */
+    border-radius: 20px;
+}
+
+
+.textCart{
+    white-space: nowrap; /*Khong xuong dong*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.5rem;
+}
+
+.textTitleSmall{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+/* Container để xếp theo hàng */
+.tab-container {
+    display: flex; /* Đặt các tab thành hàng ngang */
+    padding-bottom: 20px; /* Khoảng cách trong của container */
+}
+
+/* Thiết lập cho từng tab */
+.tab-item {
+    
+    padding: 10px 20px; /* Khoảng cách trong của mỗi tab */
+    text-align: center; /* Căn giữa văn bản */
+    border: 1px solid black; /* Khung bao cho mỗi tab */
+    margin-right: 10px; /* Khoảng cách giữa các tab */
+    border-radius: 5px; /* Bo góc cho khung */
+    cursor: pointer; /* Thêm con trỏ chuột để hiển thị có thể click */
+}
+
+/* Hiển thị khi tab đang active */
+.tab-item.active {
+    background-color: black; /* Màu nền khi tab active */
+    color: white; /* Màu chữ khi active */
+}
