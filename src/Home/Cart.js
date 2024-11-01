@@ -61,7 +61,7 @@ class Cart extends Component {
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                   </div>
-                  <p className="text-sm font-medium text-gray-900">{item.price}</p>
+                  <p className="text-xl font-medium text-gray-900">{item.price}</p>
                 </div>
               </div>
             ))}
@@ -94,7 +94,7 @@ class Cart extends Component {
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                   </div>
-                  <p className="text-sm font-medium text-gray-900">{item.price}</p>
+                  <p className="text-xl font-medium text-gray-900">{item.price}</p>
                 </div>
               </div>
             ))}
